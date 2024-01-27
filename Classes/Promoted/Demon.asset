@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5381318933981c94ba205d60c971fb64, type: 3}
+  m_Name: Demon
+  m_EditorClassIdentifier: 
+  className: Demon
+  classDescription: 
+  promotedClass: 1
+  defaultMovementRange: 4
+  defaultHealth: 6
+  defaultPower: 12
+  defaultSkill: 8
+  defaultSpeed: 1
+  defaultConstitution: 1
+  defaultDefense: 0
+  defaultResistance: 8
+  defaultLuck: 8
+  healthGrowth: 0.8
+  powerGrowth: 0.4
+  skillGrowth: 0.6
+  speedGrowth: 0.6
+  constitutionGrowth: 0.6
+  defenseGrowth: 0.4
+  resistanceGrowth: 0.2
+  luckGrowth: 0.2
+  canUseSwords: 0
+  canUseLances: 0
+  canUseAxes: 0
+  canUseBows: 0
+  canUseElemental: 0
+  canUseDark: 1
+  canUseLight: 0
+  canUseStaves: 1
+  bonusMovementRange: 0
+  bonusHealth: -3
+  bonusPower: 6
+  bonusSkill: -3
+  bonusSpeed: -3
+  bonusConstitution: 4
+  bonusDefense: 4
+  bonusResistance: 4
+  bonusLuck: 0
+  UnitMobilityType: 2

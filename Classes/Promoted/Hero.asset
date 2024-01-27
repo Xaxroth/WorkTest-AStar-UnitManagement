@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5381318933981c94ba205d60c971fb64, type: 3}
+  m_Name: Hero
+  m_EditorClassIdentifier: 
+  className: Hero
+  classDescription: 
+  promotedClass: 1
+  defaultMovementRange: 5
+  defaultHealth: 20
+  defaultPower: 8
+  defaultSkill: 6
+  defaultSpeed: 8
+  defaultConstitution: 8
+  defaultDefense: 1
+  defaultResistance: 1
+  defaultLuck: 1
+  healthGrowth: 1
+  powerGrowth: 0.4
+  skillGrowth: 0.6
+  speedGrowth: 0.6
+  constitutionGrowth: 0.6
+  defenseGrowth: 0.4
+  resistanceGrowth: 0.2
+  luckGrowth: 0.2
+  canUseSwords: 1
+  canUseLances: 0
+  canUseAxes: 1
+  canUseBows: 0
+  canUseElemental: 0
+  canUseDark: 0
+  canUseLight: 0
+  canUseStaves: 0
+  bonusMovementRange: 2
+  bonusHealth: 2
+  bonusPower: 2
+  bonusSkill: 2
+  bonusSpeed: 2
+  bonusConstitution: 2
+  bonusDefense: 2
+  bonusResistance: 2
+  bonusLuck: 2
+  UnitMobilityType: 0
