@@ -21,17 +21,13 @@ public class Node : MonoBehaviour
 
     private GameObject _gameObject;
 
-    public Node(bool walkable, Vector3 worldPosition)
+    public void Awake()
     {
-        this.walkable = walkable;
-        this.worldPosition = worldPosition;
+        if (GameManager.Instance != null) 
+            GameManager.Instance.allTiles.Add(this);
     }
 
-    public void SetGrid(Grid grid)
-    {
-        GameManager.Instance.grid = grid;
-    }
-
+    // Returns a list of the node's neighbors
     public List<Node> GetNeighbors()
     {
         List<Node> neighbors = new List<Node>();
@@ -48,6 +44,7 @@ public class Node : MonoBehaviour
         return neighbors;
     }
 
+    // Once an offset is applied, this method will move from the node and add whatever node it finds at the specified offset (for example, gridX, gridY + 1) to add the node 1 space)
     private void AddNeighbor(int x, int y, List<Node> neighbors)
     {
         if (x >= 0 && x < Grid.Instance.gridSizeX && y >= 0 && y < Grid.Instance.gridSizeY)
@@ -58,11 +55,6 @@ public class Node : MonoBehaviour
                 neighbors.Add(neighbor);
             }
         }
-    }
-
-    public void Awake()
-    {
-        GameManager.Instance.allTiles.Add(this);
     }
 
     public void SetAsOccupied(GameObject newOccupant)

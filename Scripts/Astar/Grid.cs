@@ -127,10 +127,15 @@ public class Grid : MonoBehaviour
                 node.gridX = x;
                 node.gridY = y;
                 node.worldPosition = worldPoint;
-                node.SetGrid(this);
                 grid[x, y] = tile;
+                SetGrid(this);
             }
         }
+    }
+
+    public void SetGrid(Grid grid)
+    {
+        GameManager.Instance.grid = this;
     }
 
     public Node NodeFromWorldPoint(Vector3 worldPosition)

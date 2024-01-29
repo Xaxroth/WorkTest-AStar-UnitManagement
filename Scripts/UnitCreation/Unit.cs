@@ -134,6 +134,11 @@ public class Unit : MonoBehaviour
             ApplyBaseStats(selectedData);
         }
     }
+    private UnitClassData GetSelectedClassData()
+    {
+        promotionClass = GetPromotionClass(unitClass);
+        return GetUnitClassData(unitClass);
+    }
     private void ApplyBaseStats(UnitClassData selectedData)
     {
         health += selectedData.defaultHealth;
@@ -162,11 +167,6 @@ public class Unit : MonoBehaviour
     }
 
 
-    private UnitClassData GetSelectedClassData()
-    {
-        promotionClass = GetPromotionClass(unitClass);
-        return GetUnitClassData(unitClass);
-    }
 
     // Handles class promotions. Based on the base class chosen.
     private PromotesTo GetPromotionClass(UnitClass unitClass)
